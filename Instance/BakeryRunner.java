@@ -10,23 +10,11 @@ public class BakeryRunner {
 		String[] sweets= {"Mysorepak,Jaamun,Laddu"};
 		double[] price= {120,150,185,200};
 		String[] customers= {"Employees,Students,Kids"};
-		Bakery bun=new Bakery("Iyengars Bakery", 78497, "Venkat", "Bangalore", false, items, sweets, price, customers);
-		bun.display();
+		int[] noOfCustomers= {95,120,115,75};
+		int[] noOfWorkers= {10,8,12,5};
 		
-		System.out.println(System.lineSeparator());
-
-		Bakery bun1=new Bakery("Udupi Bakery", 87459, "Akash", "Hubli", false, items, sweets, price, customers);
-		bun1.display();
-		System.out.println(System.lineSeparator());
-
-		Bakery bun2=new Bakery("Venkateshwar Bakery", 94568, "Prakash", "Tumkur", false, items, sweets, price, customers);
-		bun2.display();
-		System.out.println(System.lineSeparator());
-
-
-		Bakery bun3=new Bakery("Maruti Bakery", 67894, "Veeresh", "Bagalkot", false, items, sweets, price, customers);
-		bun3.display();
-
+		Bakery bun=new Bakery("Iyengars Bakery", 78497, "Venkat", "Bangalore", false, items, sweets, price, customers,noOfCustomers,noOfWorkers);
+		bun.display();
 		
 	}
 

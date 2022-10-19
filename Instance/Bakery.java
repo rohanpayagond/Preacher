@@ -12,10 +12,13 @@ public class Bakery {
 	public String[] sweets;
 	public double[] price;
 	public String[] customers;
+	public int[] noOfCustomers;
+	public int[] noOfWorkers;
+	
 	
 	
 	public Bakery(String name,int shopNo,String ownerName,String location, boolean homeDelivery,String[] items,
-					String[] sweets,double[] price,String[] customers)
+					String[] sweets,double[] price,String[] customers,int[] noOfCustomers, int[] noOfWorkers)
 	{
 		this.name=name;
 		this.shopNo=shopNo;
@@ -26,6 +29,8 @@ public class Bakery {
 		this.sweets=sweets;
 		this.price=price;
 		this.customers=customers;
+		this.noOfCustomers=noOfCustomers;
+		this.noOfWorkers=noOfWorkers;
 		System.out.println("Using All Variables");
 	}
 	
@@ -59,6 +64,17 @@ public class Bakery {
 			System.out.println(customers);
 		}
 		
+		for (int i = 0; i < this.noOfCustomers.length; i++) {
+			int noOfCustomers = this.noOfCustomers[i];
+			System.out.println(noOfCustomers);
+		}
+		
+		for (int i = 0; i < this.noOfWorkers.length; i++) {
+			int noOfWorkers = this.noOfWorkers[i];
+			System.out.println(noOfWorkers);
+		}
+		
+
 
 	}
 	
